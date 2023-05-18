@@ -18,5 +18,5 @@ from django.urls import path
 from Educator import views
 
 urlpatterns = [
-    path('',views.Home)
+    path('',views.Home, name='Home')
 ]
