@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'Educator.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'Database1',
+        'NAME': 'Educator',
         'CLIENT': {
-            'host': 'mongodb+srv://202001445:Krunal!100@cluster0.ysbyron.mongodb.net/Database1?retryWrites=true&w=majority',
+            'host': 'mongodb+srv://202001445:Krunal!100@cluster0.ysbyron.mongodb.net/Educator?retryWrites=true&w=majority',
             'username': '202001445',
             'password': 'Krunal!100',
         }
