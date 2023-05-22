@@ -4,6 +4,7 @@ class subject(models.Model):
     name = models.CharField(max_length=50)
     instructor_username = models.CharField(max_length=50)
     is_allowed = models.BooleanField(default=False)
+    link = models.URLField(blank=True, null=True)
     duration = models.IntegerField()
     description = models.TextField()
     is_active = models.BooleanField(default=False)
@@ -14,6 +15,7 @@ class subject(models.Model):
 class students(models.Model):
     username = models.CharField(max_length=50)
     name = models.CharField(max_length=100)
+    email = models.EmailField(default=None)
     age = models.IntegerField()
     is_registered = models.BooleanField(default=False)
     is_verified = models.BooleanField(default=False)
@@ -23,6 +25,7 @@ class students(models.Model):
 class Instructor(models.Model):
     username = models.CharField(max_length=50)
     name = models.CharField(max_length=100)
+    email = models.EmailField(default=None)
     age = models.IntegerField()
     qualification = models.TextField()
     is_registered = models.BooleanField(default=False)
@@ -31,6 +34,7 @@ class Instructor(models.Model):
     subject = models.ArrayField(model_container=subject, default=None)
     
 class Admin(models.Model):
+    email = models.EmailField(default=None)
     password = models.CharField(max_length=16)
 
     
