@@ -19,6 +19,6 @@ from Educator import views
 
 urlpatterns = [
     path('',views.Home, name='Home'),
-    path('', include('authentic.urls'))
+    path('', include('authenticating.urls'))
     
 ]
