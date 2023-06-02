@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Educator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'tempates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'Educator',
         'CLIENT': {
-            'host': 'mongodb+srv://202001445:Krunal!100@cluster0.ysbyron.mongodb.net/Educator?retryWrites=true&w=majority',
+            'host': 'mongodb+srv://202001445:Krunal!100@cluster0.ysbyron.mongodb.net/?retryWrites=true&w=majority',
             'username': '202001445',
             'password': 'Krunal!100',
         }
